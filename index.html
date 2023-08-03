@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Advertisement UI</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Advertisements</h1>
+        <p>Upload new advertisement:</p>
+        <input type="file" id="fileUpload" onchange="fileUploadChange()" />
+        <button id="uploadBtn" onclick="uploadFile()" disabled>Upload</button>
+        <br><br><br>
+        <hr>
+        <br><br>
+        <h2>Advertisement List:</h2>
+        <table id="imageTable">
+            <thead>
+                <td>Image</td>
+                <td>Filename</td>
+                <td>Delete</td>
+            </thead>
+            <tbody id="imageTableBody"></tbody>
+        </table>
+    </body>
+</html>
